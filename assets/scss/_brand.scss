@@ -1,0 +1,15 @@
+.brand{
+    padding: 100px 0;
+    &-area{
+       &-image{
+        img{
+            margin: 0 auto;
+            filter: grayscale(100%);
+            transition: .3s;
+            &:hover{
+                filter: grayscale(0%);
+            }
+        }
+       } 
+    }
+}

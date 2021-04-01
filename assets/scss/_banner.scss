@@ -1,0 +1,82 @@
+.banner{
+    &__wrapper{
+        &_title{
+            margin-bottom: 45px;
+            h1{
+                font-size: 70px;
+                color: $black;
+                line-height: 1.2;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    top: 35px;
+                    width: 15px;
+                    height: 5px;
+                    background-color: #C4C4C4;
+                }
+            }
+        }
+        &_content{
+            &-text{
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                P{
+                   max-width: 37%;
+                   margin-right: 120px;
+                   margin-left: 50px;
+                   line-height: 1.7;
+                   position: relative;
+                   &::after{
+                       content: "";
+                       position: absolute;
+                       left: -45px;
+                       top: 0;
+                       width: 7px;
+                       border-radius: 30px;
+                       height: 55px;
+                       background-color: #E8F1FC;
+                   }
+                }
+            }
+            &-compitable{
+                margin-left: 50px;
+                padding-top: 20px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    height: 1px;
+                    background-color: #e5e5e5;
+                    width: 130px;
+                }
+                span{
+                    color: $black-2;
+                }
+                .logo{
+                    margin-top: 20px;
+                    a{
+                        margin-right: 15px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        img{
+                            filter: grayscale(100%);
+                            transition: .3s;
+                            &:hover{
+                                filter: grayscale(0%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__laptop{
+        padding-top: 100px;
+    }
+}
